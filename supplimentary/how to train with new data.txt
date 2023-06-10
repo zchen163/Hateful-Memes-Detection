@@ -1,0 +1,17 @@
+1. make a new directory (e.g. train_with_new_data), and cd to this directory
+2. copy the following file from /home/ljj7129/HatefulMemes/train_with_new_data/
+    HyperparameterTuning.csv
+    sweep.py
+    sweep.sh
+3. create a new directory under train_with_new_data named features_all
+4. link all the old and new feature files to features_all 
+    (using link could save a lot of disk space because it only creates symbolic links)
+    command:
+    ln -s /home/jupyter/HatefulMemes/features/feats_hm/*.npy ./features_all/
+    ln -s <YOUR_NEW_DATA_PATH>/*.npy ./features_all/
+5. copy your new train data jsonl files to your annotation directory, command:
+    cp <YOUR_NEW_JSONL_FILE> ~/.cache/torch/mmf/data/datasets/hateful_memes/defaults/annotations/
+6. you may need to change the variable train_dir in sweep.py. It should be your new train annotation file
+7. Use the following command to train model in background: 
+    (Note: running in the background is important bacause even if you disconnected your jupyter lab the training process won't be disrupted):
+    nohup python sweep.py > out.log &
