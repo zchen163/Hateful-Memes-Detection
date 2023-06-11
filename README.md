@@ -1,6 +1,6 @@
 # Hateful-Memes-Detection
 
-* Edited by Chen Zhang
+* Edited by Chen Zhang, project is finished in 2021
 
 This project works on Facebook Hateful Memes Challenges and aims at improving classification of memes through AI modeling technologies including ensembled algorithms, NLP transformer modeling and multimodal VisualBERT model. Our final model pre-trained on visualBERT and augmented data with single averaging ensemble shows the ROC-AUC is 0.7675 and Accuracy is 0.7111, which is higher than an award winning model.
 
