@@ -1,5 +1,7 @@
 # Hateful-Memes-Detection
 
+* Edited by Chen Zhang
+
 This project works on Facebook Hateful Memes Challenges and aims at improving classification of memes through AI modeling technologies including ensembled algorithms, NLP transformer modeling and multimodal VisualBERT model. Our final model pre-trained on visualBERT and augmented data with single averaging ensemble shows the ROC-AUC is 0.7675 and Accuracy is 0.7111, which is higher than an award winning model.
 
 <img width="411" alt="image" src="https://github.com/zchen163/Hateful-Memes-Detection/assets/48006055/91b09ad0-c246-4f7e-8b26-acc742200df6">
@@ -52,6 +54,8 @@ Figure 4. Accuracy and ROC-AUC with Alternative Ensemble Methods and Model Pre-t
 
 In this project, we conducted multiple approaches to detect hateful memes based on pre-trained multimodal models. In order to reach a higher score, we compared multiple pre-trained models from MMF, trained models with hyperparameter tuning, expanded the training dataset by applying image manipulation (e.g. flipping and blurring), and trained with more images from Memotion dataset. Furthermore, we introduced two new ensemble techniques for postprocessing the classifier probabilities to generate labels. Our final model pre-trained on visualBERT and augmented data with single averaging ensemble shows the ROC-AUC is 0.7675 and Accuracy is 0.7111, which is slightly higher than the benchmark.
 
+*This project is done in collaboration with Jinjun Liu, Ji Shen, and Yi Wang. 
+
 ## References
 
 [1] Kaiming He, Georgia Gkioxari, Piotr Doll´ar, and Ross Girshick. Mask r-cnn. In Proceedings of the IEEE international conference on computer vision, pages 2961–2969, 2017.
@@ -71,3 +75,5 @@ In this project, we conducted multiple approaches to detect hateful memes based 
 [8] Amanpreet Singh, Vedanuj Goswami, Vivek Natarajan, Yu Jiang, Xinlei Chen, Meet Shah, Marcus Rohrbach, Dhruv Batra, and Devi Parikh. Mmf: A multimodal framework for vision and language research. https://github.com/ facebookresearch/mmf, 2020.
 
 [9] Riza Velioglu and Jewgeni Rose. Detecting hate speech in memes using multimodal deep learning approaches: Prizewinning solution to hateful memes challenge. arXiv preprint arXiv:2012.12975, 2020. 
+
+
