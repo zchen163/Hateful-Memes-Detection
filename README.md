@@ -2,7 +2,7 @@
 
 * Edited by Chen Zhang, project finished in 2021
 
-This project works on Facebook Hateful Memes Challenges and aims at improving classification of memes through AI modeling technologies including ensembled algorithms, NLP transformer modeling and multimodal VisualBERT model. Our final model pre-trained on visualBERT and augmented data with single averaging ensemble shows the ROC-AUC is 0.7675 and Accuracy is 0.7111, which is higher than an award winning model.
+This project focuses on Facebook Hateful Memes Challenges and aims at improving classification of memes through AI modeling technologies including ensembled algorithms, NLP transformer modeling, and multimodal VisualBERT model. Our final model pre-trained on visualBERT and augmented data with single averaging ensemble shows the ROC-AUC is 0.7675 and Accuracy is 0.7111, which is higher than an award winning model.
 
 <img width="411" alt="image" src="https://github.com/zchen163/Hateful-Memes-Detection/assets/48006055/91b09ad0-c246-4f7e-8b26-acc742200df6">
 
@@ -24,7 +24,7 @@ The following technologies are applied to the VisualBERT model:
 
 - Data Augmentation: 
 
-Data augmentation are widely-used technologies in data expansion as state-of-the-art deep learning models typically have parameters in the order of millions, especially in image processing. In this project we carry out two data augmentation experiments and compare the result with established
+Data augmentation is a widely-used technology in data expansion as state-of-the-art deep learning models typically have parameters in the order of millions, especially in image processing. In this project we carry out two data augmentation experiments and compare the result with established
 model. The approaches are image modification including flipping and blurring, and addition of Memotion Dataset which contains 7k annotated memes with labels. 
 
 <img width="412" alt="image" src="https://github.com/zchen163/Hateful-Memes-Detection/assets/48006055/4284806c-25d1-4a67-b604-f6bf361e0134">
@@ -33,7 +33,7 @@ Figure 3. Image Modification example: left original, middle flipped, right flipp
 
 - Hyperparameter tuning
 
-Multiple models are generated and used for ensemble learning based on the improved pre-trained VisualBERT model. The core method of generating the model is implementing the Grid Search approach in the model production. In order to improve the model performance and save training time, hyper-parameter tuning is applied in the Grid Search process.
+Multiple models are generated and used for ensemble learning based on the improved pre-trained VisualBERT model. The core method of generating the model is the implementatino of the Grid Search approach in the model production. In order to improve the model performance and save training time, hyper-parameter tuning is applied in the Grid Search process.
 
 The hyper-parameter Tuning process is a good approach to achieve a balance between underfitting and overfitting. When the deep learning model could not able to reduce the error for either the test or training set, most likely the model hits the underfitting issue. The learning rate and batch size
 are 2 parameters we mainly focus to find the optimal hyperparameters.
